@@ -33,7 +33,7 @@ jobs:
           
       - name: Build content to public site
         working-directory: ./
-        run: hugo --minify -gc --cleanDestinationDir
+        run: hugo --minify -c --cleanDestinationDir
         
       - name: Deploy and publish updates
         uses: peaceiris/actions-gh-pages@v3
