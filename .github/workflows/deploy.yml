@@ -25,4 +25,24 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       
-      - name:
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extened: true
+          
+      - name: Build content to public site
+        working-directory: ./
+        run: hugo --minify -gc --cleanDestinationDir
+        
+      - name: Deploy and publish updates
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/gh-pages' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+            
+        
+        
+        
+        
