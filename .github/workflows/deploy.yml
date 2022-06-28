@@ -29,8 +29,8 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: Asher-Ding/Blog
-          publish_branch: gh-pages  # default: gh-pages
+          external_repository: Asher-Ding/blog
+          publish_branch: main  # default: gh-pages
           publish_dir: ./public
             
         
