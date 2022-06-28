@@ -1,5 +1,4 @@
-baseURL: "https://asher-ding.github.io/"
-root: /asher-ding.github.io
+baseURL: "https://asher-ding.github.io/blog/"
 title: Asher
 paginate: 5
 theme: PaperMod
