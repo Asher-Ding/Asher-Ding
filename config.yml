@@ -53,7 +53,7 @@ params:
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: ./kaixin.png
     iconHeight: 35
 
   # profile-mode
@@ -82,7 +82,7 @@ params:
     - name: stackoverflow
       url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://asher-ding.github.io/"
 
   analytics:
     google:
@@ -122,9 +122,9 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
+    - identifier: Asher
+      name: Asher-Ding
+      url: https://asher-ding.github.io
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
